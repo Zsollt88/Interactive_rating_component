@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <div id="ratingState">
+    <img src="./images/icon-star.svg" alt="icon_star" title="icon_star" id="iconStar"><br>
+    <p id="title">How did we do?</p>
+
+    <p id="text">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p><br>
+
+    <div id="ratingList">
+
+
+      <label id="rate1">
+        <input type="radio" name="scoreRating" value="1">
+        1
+      </label>
+
+      <label id="rate2">
+        <input type="radio" name="scoreRating" value="2">
+        2
+      </label>
+
+      <label id="rate3">
+        <input type="radio" name="scoreRating" value="3">
+        3
+      </label>
+
+      <label id="rate4">
+        <input type="radio" name="scoreRating" value="4">
+        4
+      </label>
+
+      <label id="rate5">
+        <input type="radio" name="scoreRating" value="5">
+        5
+      </label>
+
+
+    </div>
+
+    <button type="button" id="buttonForSubmit" onclick="voting()">Submit</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div id="thankYouState">
+    <img src="./images/illustration-thank-you.svg" alt="thankYouPicture" title="thankYouPicture" id="thankYouPicture">
+    <br>
+    <span id="thankYouscore">
+      You selected
+      <span id="addRating">0</span> out of 5
+    </span><br>
+
+    <p id="thankYouTitle">Thank you!</p>
+
+    <p id="thankYouText">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </p>
+  </div>
+
+  <!-- Thank you state end -->
+
+
+  <div class=" attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/zsolt-nagy-43871b247/" target="_blank">Zsolt Nagy</a>.
+  </div>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#rate1").click(function () {
+        $("#rate1").css('backgroundColor', 'hsl(217, 12%, 63%)');
+        $("#rate1").css('color', 'hsl(0, 0%, 100%)');
+      });
+
+      $("#rate2").click(function () {
+        $("#rate2").css('backgroundColor', 'hsl(217, 12%, 63%)');
+        $("#rate2").css('color', 'hsl(0, 0%, 100%)');
+      });
+
+      $("#rate3").click(function () {
+        $("#rate3").css('backgroundColor', 'hsl(217, 12%, 63%)');
+        $("#rate3").css('color', 'hsl(0, 0%, 100%)');
+      });
+
+      $("#rate4").click(function () {
+        $("#rate4").css('backgroundColor', 'hsl(217, 12%, 63%)');
+        $("#rate4").css('color', 'hsl(0, 0%, 100%)');
+      });
+
+      $("#rate5").click(function () {
+        $("#rate5").css('backgroundColor', 'hsl(217, 12%, 63%)');
+        $("#rate5").css('color', 'hsl(0, 0%, 100%)');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
