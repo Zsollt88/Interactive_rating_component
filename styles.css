@@ -57,23 +57,23 @@ body {
 }
 
 
-label {
+.ratingButton {
     text-align: center;
     color: hsl(217, 12%, 63%);
     font-size: 15px;
-    padding: 10px;
     background-color: hsl(213, 19%, 23%);
     border-radius: 50%;
     width: 35px;
+    border: none;
 }
 
-label:hover {
+.ratingButton:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
 
-label:focus-within {
+.ratingButton:focus {
     color: hsl(0, 0%, 100%);
     background-color: hsl(217, 12%, 63%);
 }

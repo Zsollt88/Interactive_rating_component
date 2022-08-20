@@ -1,13 +1,19 @@
-function voting() {
-  let rateVariable = document.querySelector('input[type="radio"]:checked').value;
-  console.log('The selected value is ' + rateVariable);
-  document.getElementById("thankYouState").style.display = "flex";
-  document.getElementById("addRating").innerHTML = rateVariable;
-};
+$(document).ready(function () {
+  $(".ratingButton").click(function () {
+    let rateVariable = $(this).val();
+    console.log('The selected value is ' + rateVariable);
+    $("#addRating").text(rateVariable);
+  });
 
+  $("#buttonForSubmit").click(function () {
+    $("#thankYouState").css("display", "flex");
+  });
+});
 
 
 /* TRYING FOR CHANGE AND RESET BACKGROUND-COLOR OF LABELS
+
+
 function resetList() {
   let resetListValues = document.querySelectorAll("label");
   for (let i = 0; resetListValues.length; i++) {
